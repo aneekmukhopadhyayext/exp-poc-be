@@ -1,0 +1,68 @@
+# OS-specific files.
+.DS_Store
+
+# Editor and language files.
+.idea/
+.project/
+.bundle/
+.vscode/
+
+# Backup files.
+*.sql
+*.gz
+*.bak
+
+# Ignore node modules
+node_modules
+
+# Drupal core
+web/core
+
+# Ignore the contrib libraries
+web/libraries
+
+# Ignore the contrib modules
+web/modules/contrib
+
+# Ignore the contrib themes
+web/themes/contrib
+
+# Ignore Custom Profiles.
+web/profiles/contrib
+
+# Ignore Drush commands.
+drush/Commands/contrib
+
+# Composer's vendor folder.
+/vendor/
+
+# Ignore local env file
+.env
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+web/sites/*/private
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+web/sites/simpletest
+
+# Ignore local settings files.
+local.drush.yml
+local.site.yml
+local.services.yml
+*.local
+/files-private
+.phpcs-cache
+settings.local.php
+
+/web/**/.gitignore
+
+
+# Ignore Local development files.
+.ddev/config.local.yaml
+
+# Git authentication file.
+auth.json
+
+# SSH Key directory.
+/ssh-keys

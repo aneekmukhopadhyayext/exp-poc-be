@@ -1,0 +1,6 @@
+ARG BASE_IMAGE
+FROM $BASE_IMAGE
+
+RUN npm install -g typescript@latest
+RUN npm install -g ts-node@latest
+RUN npm install -g @types/node@latest

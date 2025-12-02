@@ -1,0 +1,133 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^2.0",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/canvas": "^1.0@RC",
+        "drupal/core-composer-scaffold": "^11.2",
+        "drupal/core-recipe-unpack": "^11.2",
+        "drupal/core-recommended": "^11.2",
+        "drupal/field_group": "^4.0",
+        "drupal/gin": "^5.0",
+        "drupal/jsonapi_extras": "^3.27",
+        "drupal/jsonapi_include": "^2.0",
+        "drupal/next": "^2.0",
+        "drupal/pathauto": "^1.14",
+        "drush/drush": "^13.6"
+    },
+    "require-dev": {
+        "drupal/devel": "^5.4",
+        "drupal/kint-kint": "^2.2"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-recipe-unpack": true,
+            "php-http/discovery": true,
+            "php-tuf/composer-integration": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "installer-types": [
+            "drupal-library",
+            "bower-asset",
+            "npm-asset",
+            "drupal-recipe"
+        ],
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "recipes/{$name}": [
+                "type:drupal-recipe"
+            ]
+        },
+        "patches": {
+            "drupal/decoupled_router": {
+                "Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2024-08-05/decouple_router-3111456-resolve-language-issue-63--get-translation-re-rolled-and-good-redirect.patch"
+            }
+        }
+    },
+    "scripts": {
+        "site:install": [
+            "composer install",
+            "drush site:install --account-name=admin --account-pass=admin --db-url=mysql://root:root@db/drupal --site-name=Drupal --yes",
+            "drush entity:delete shortcut_set --yes",
+            "drush cset system.site uuid 66cd78de-ade8-4be2-8380-b041847d3561 --yes",
+            "drush cim --yes"
+        ],
+        "remove-git-submodules": [
+            "find web vendor -name '.git' | xargs rm -rf",
+            "find web vendor -name '.github' | xargs rm -rf",
+            "find web vendor -name '.gitlab' | xargs rm -rf"
+        ],
+        "post-install-cmd": [
+            "@remove-git-submodules"
+        ],
+        "post-update-cmd": [
+            "@remove-git-submodules"
+        ]
+    }
+}

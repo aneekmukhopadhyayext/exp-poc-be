@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+## Description: Run multiple command to set-up the site.
+## Usage: site-setup
+## Example: ddev site-setup
+
+
+DRUSH="/var/www/html/vendor/bin/drush"
+COMPOSER="/usr/local/bin/composer"
+PHP=$(which php)
+
+# Run drush commands to set up the site
+if [ -f "${DRUSH}" ]; then
+    echo "Running commands to set up the site..." && \
+    ${COMPOSER} site:install && \
+    # Setup the Roles, Permissions, keys and consumers.
+    ${DRUSH} scr /var/www/html/.ddev/commands/web/next-setup.php && \
+    # Install the demo contents.
+    # Cache clear.
+    ${DRUSH} cr && \
+    echo "Drush commands completed successfully."
+else
+    echo "Drush not found. Please ensure Drush is installed and available in the path."
+    exit 1
+fi

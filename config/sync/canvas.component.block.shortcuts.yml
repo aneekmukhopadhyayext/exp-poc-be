@@ -1,0 +1,23 @@
+uuid: 46f32a55-850e-47e0-a3f3-f893fd35d4a7
+langcode: en
+status: false
+dependencies:
+  module:
+    - shortcut
+active_version: f2bd05406ffda509
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: shortcuts
+        label: Shortcuts
+        label_display: '0'
+        provider: shortcut
+    fallback_metadata:
+      slot_definitions: null
+label: Shortcuts
+id: block.shortcuts
+provider: shortcut
+source: block
+source_local_id: shortcuts
+category: Menus

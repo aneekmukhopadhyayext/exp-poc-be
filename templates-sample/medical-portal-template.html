@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Medical Portal - Ihr Medizinportal</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body
+		class="bg-white text-gray-900">
+		<!-- Navigation Header -->
+		<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+			<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+				<div class="flex items-center space-x-8">
+					<div class="font-bold text-xl text-blue-600">SPACE</div>
+					<div class="hidden md:flex space-x-6 text-sm">
+						<a href="#" class="text-gray-600 hover:text-gray-900">Therapiegebiete</a>
+						<a href="#" class="text-gray-600 hover:text-gray-900">Produkte</a>
+						<a href="#" class="text-gray-600 hover:text-gray-900">Wissen</a>
+						<a href="#" class="text-gray-600 hover:text-gray-900">Für Patienten</a>
+					</div>
+				</div>
+				<button class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">Anmelden</button>
+			</nav>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="relative h-64 md:h-80 bg-gradient-to-r from-blue-900 to-blue-700 flex items-center">
+			<div class="absolute inset-0 opacity-40" style="background-image: url('/templates-sample/placeholder.svg?height=320&width=1200'); background-size: cover; background-position: center;"></div>
+			<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<p class="text-blue-200 text-sm uppercase tracking-wide">SPACE</p>
+				<h1 class="text-4xl md:text-5xl font-bold text-white mt-2">Ihr Medizinportal</h1>
+			</div>
+		</section>
+
+		<!-- Main Content -->
+		<main
+			class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<!-- Studies Section -->
+			<section class="mb-16">
+				<div class="flex items-center justify-between mb-8">
+					<h2 class="text-2xl font-bold">Studien & Publikationen</h2>
+					<a href="#" class="text-blue-600 text-sm hover:underline">Mehr anzeigen</a>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Study" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">EPI Studies 2025</p>
+							<p class="text-gray-600 text-xs mt-1">Epidemiological insights</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Study" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Speaker Slides</p>
+							<p class="text-gray-600 text-xs mt-1">Expert presentations</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Study" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Die DARCI Studie</p>
+							<p class="text-gray-600 text-xs mt-1">Clinical trial data</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Study" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Pathophysiologie</p>
+							<p class="text-gray-600 text-xs mt-1">Disease mechanisms</p>
+						</div>
+					</div>
+				</div>
+				<div class="border-t-4 border-purple-600 mt-8"></div>
+			</section>
+
+			<!-- Access Section -->
+			<section class="my-16 grid md:grid-cols-2 gap-8 items-center">
+				<div>
+					<h2 class="text-2xl font-bold mb-6">Zugang für medizinische Fachkreise</h2>
+					<ul class="space-y-3 text-gray-700">
+						<li class="flex items-start">
+							<span class="text-blue-600 mr-3">•</span>
+							Publikationen und Studiendesign</li>
+						<li class="flex items-start">
+							<span class="text-blue-600 mr-3">•</span>
+							Produkte und therapeutische Ansätze</li>
+						<li class="flex items-start">
+							<span class="text-blue-600 mr-3">•</span>
+							CMEs und weitere Fortbildungen</li>
+						<li class="flex items-start">
+							<span class="text-blue-600 mr-3">•</span>
+							Informationen zu Therapiegebieten</li>
+					</ul>
+				</div>
+				<div class="flex justify-center md:justify-end">
+					<button class="bg-blue-600 text-white px-8 py-3 rounded font-semibold hover:bg-blue-700">Login für Fachkreise</button>
+				</div>
+			</section>
+
+			<!-- Media Library -->
+			<section class="mb-16">
+				<h2 class="text-2xl font-bold mb-8">Mediathek</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="bg-gray-800 rounded overflow-hidden text-white hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Media" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">HFrEF Wirklich</p>
+						</div>
+					</div>
+					<div class="bg-gray-800 rounded overflow-hidden text-white hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Media" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Mia Dr. Puls</p>
+						</div>
+					</div>
+					<div class="bg-gray-800 rounded overflow-hidden text-white hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Media" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Mit Dr. Cleaning</p>
+						</div>
+					</div>
+					<div class="bg-blue-600 rounded overflow-hidden text-white hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Media" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Theorie Case Report</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Events Section -->
+			<section class="mb-16">
+				<div class="flex items-center justify-between mb-8">
+					<h2 class="text-2xl font-bold">Veranstaltungen</h2>
+					<a href="#" class="text-blue-600 text-sm hover:underline">Mehr anzeigen</a>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Event" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Nephrokonferenz</p>
+							<p class="text-gray-600 text-xs mt-1">Fachkonferenz 2025</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Event" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Symposium Tag 1</p>
+							<p class="text-gray-600 text-xs mt-1">Klinische Updates</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Event" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">ESC Kongress 2024</p>
+							<p class="text-gray-600 text-xs mt-1">Internationales Event</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=200&width=300" alt="Event" class="w-full h-40 object-cover">
+						<div class="p-4">
+							<p class="font-semibold text-sm">Medizinische Kongresse</p>
+							<p class="text-gray-600 text-xs mt-1">Vorträge & Diskussionen</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Therapy Grid -->
+			<section class="mb-16">
+				<h2 class="text-2xl font-bold mb-8">Therapiegebiete</h2>
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=150&width=200" alt="Therapy" class="w-full h-32 object-cover">
+						<div class="p-3">
+							<p class="font-semibold text-xs">Kardiomyopathie</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=150&width=200" alt="Therapy" class="w-full h-32 object-cover">
+						<div class="p-3">
+							<p class="font-semibold text-xs">Thrombose</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=150&width=200" alt="Therapy" class="w-full h-32 object-cover">
+						<div class="p-3">
+							<p class="font-semibold text-xs">Herzerkrankung</p>
+						</div>
+					</div>
+					<div class="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+						<img src="/templates-sample/placeholder.svg?height=150&width=200" alt="Therapy" class="w-full h-32 object-cover">
+						<div class="p-3">
+							<p class="font-semibold text-xs">Rhythmusstörungen</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-gray-900 text-gray-300 py-16">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid md:grid-cols-3 gap-12 mb-12">
+					<div>
+						<h3 class="text-white font-bold mb-4">Wir sind für Sie da</h3>
+						<p class="text-sm mb-4">Wenn Sie Nebenwirkungen oder Qualitätsabweichungen melden möchten, wenden Sie sich bitte an ihre örtliche Qualitätsbeauftragten.</p>
+						<button class="border border-gray-500 text-white px-4 py-2 text-sm hover:bg-gray-800">SafeTrack</button>
+					</div>
+					<div>
+						<h3 class="text-white font-bold mb-4">Jetzt für aktuelle Informationen anmelden:</h3>
+						<button class="border border-gray-500 text-white px-4 py-2 text-sm hover:bg-gray-800 block mb-3">Zur Anmeldung</button>
+						<h4 class="text-white font-bold mt-6 mb-2 text-sm">Fachinformationen zu unseren Produkten</h4>
+						<button class="border border-gray-500 text-white px-4 py-2 text-sm hover:bg-gray-800">Fachinformationen</button>
+					</div>
+					<div>
+						<h3 class="text-white font-bold mb-4">Medizinische Information</h3>
+						<p class="text-sm mb-2">Informationen zu unseren Produkten</p>
+						<p class="text-sm mb-4">Telefonnummer: 0800 64 22 537<br>E-Mail: medsinfo@provider.com<br>Web: medinfo.example.de</p>
+						<button class="border border-gray-500 text-white px-4 py-2 text-sm hover:bg-gray-800">Kontakt</button>
+					</div>
+				</div>
+				<div class="border-t border-gray-700 pt-8 flex items-center justify-between">
+					<p class="text-xs text-gray-500">© 2025 Medical Provider GmbH | Impr. & Daten</p>
+					<div class="text-xl font-bold text-blue-600">SPACE</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

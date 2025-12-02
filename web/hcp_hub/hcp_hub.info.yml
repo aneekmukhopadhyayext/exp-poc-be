@@ -1,0 +1,24 @@
+name: hcp_hub
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - hcp_hub/base
+  - hcp_hub/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - hcp_hub/user
+  core/drupal.dropbutton:
+    - hcp_hub/dropbutton
+  core/drupal.dialog:
+    - hcp_hub/dialog
+  file/drupal.file:
+    - hcp_hub/file
+  core/drupal.progress:
+    - hcp_hub/progress
+  core/drupal.tablesort:
+    - hcp_hub/drupal.tablesort
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.2.8'

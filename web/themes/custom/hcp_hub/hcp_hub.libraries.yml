@@ -1,0 +1,14 @@
+tailwindcss:
+  version: VERSION
+  remote: https://github.com/tailwindlabs/tailwindcss
+  license:
+    name: MIT
+    url: https://github.com/tailwindlabs/tailwindcss/blob/main/LICENSE
+  js:
+    //cdn.jsdelivr.net/npm/@tailwindcss/browser@4:  { type: external, minified: true }
+
+global-styles:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: { }

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## Description: Run pnpm commands inside the web container.
+## Usage: pnpm [flags] [args]
+## Example: "ddev pnpm install"
+
+CMD="/usr/local/bin/pnpm"
+
+if ! command -v $CMD >/dev/null; then
+  echo "pnpm is not available. Check the configuration."
+  exit 1
+fi
+
+$CMD "$@"
