@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Starshot Container component.
+ *
+ * Variables:
+ * - content: [string] Inner content HTML.
+ * - background: [string] Design: none, red, green, blue, yellow, purple
+ * - custom_class: [string] Additional classes.
+ */
+#}
+
+{% set background = background | default('none') %}
+{% set background_class = '' %}
+{% if background != 'none' %}
+	{% set background_class = 'bg-' ~ background ~ '-300' %}
+{% endif %}
+{% set custom_class = custom_class | default('') %}
+
+{% set modifier_class = '%s %s'|format(background_class, custom_class|default('')) %}
+
+<div class="container {{ modifier_class -}}">
+	{% block content %}
+		{{ content|raw }}
+	{% endblock %}
+</div>

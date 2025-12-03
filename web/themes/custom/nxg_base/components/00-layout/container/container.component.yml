@@ -1,0 +1,41 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Container
+description: A container component to hold other components with design options.
+status: experimental
+
+group: Layout
+
+props:
+  type: object
+
+  properties:
+
+    background:
+      type: string
+      title: Background
+      description: 'Any background color options.'
+      enum:
+        - none
+        - red
+        - green
+        - blue
+        - yellow
+        - purple
+      default: none
+      examples:
+        - none
+
+    custom_class:
+      type: string
+      title: Custom class
+      description: Additional classes.
+      examples:
+        - 'sample'
+
+slots:
+
+  content:
+    type: string
+    title: Content
+    description: Content slot.

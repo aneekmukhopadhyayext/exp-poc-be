@@ -1,7 +1,7 @@
-name: HCP Hub
-description: "A custom TailWind CSS based theme for HCP Hub."
+name: NXG Base Theme
+description: "Base theme that defines building blocks."
 type: theme
-base theme: nxg_base
+base theme: stable9
 core_version_requirement: ^11
 
 regions:
@@ -18,8 +18,3 @@ regions:
   content_below: Content Below
   footer_top: Footer Top
   footer_bottom: Footer Bottom
-
-
-libraries:
-  - hcp_hub/tailwindcss
-  - hcp_hub/global-styles
