@@ -1,11 +1,8 @@
-uuid: 770e7aa0-e6f2-4510-8c4b-21ee2240562b
 langcode: en
 status: true
 dependencies:
   theme:
     - nxg_base
-_core:
-  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
 id: nxg_base_primary_local_tasks
 theme: nxg_base
 region: header

@@ -1,11 +1,8 @@
-uuid: cd6cd12e-648f-48cc-bbeb-d6ceaf1b57ba
 langcode: en
 status: true
 dependencies:
   theme:
     - hcp_hub
-_core:
-  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
 id: hcp_hub_primary_local_tasks
 theme: hcp_hub
 region: content

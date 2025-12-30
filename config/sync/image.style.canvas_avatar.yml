@@ -1,12 +1,9 @@
-uuid: 30b34325-11c3-44a7-a09d-d655cd790ee3
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - canvas
-_core:
-  default_config_hash: mFeGRL7Ycaui6tmCM9P9_tO4iW0zbk1UL9T-grjyqm8
 name: canvas_avatar
 label: 'Drupal Canvas Avatar'
 effects:

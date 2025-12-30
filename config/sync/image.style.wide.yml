@@ -1,9 +1,6 @@
-uuid: 32c1f713-3327-4f9d-ba26-3495090a59cb
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: vbPSqe3wbFSkaEY0zGy3NVpofBxcTZYrT6N2YPQX7nI
 name: wide
 label: 'Wide (1090)'
 effects:

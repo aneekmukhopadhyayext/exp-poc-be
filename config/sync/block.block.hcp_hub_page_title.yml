@@ -1,11 +1,8 @@
-uuid: 68f1772e-c5b7-4c58-a9d2-1ffa7691aaeb
 langcode: en
 status: true
 dependencies:
   theme:
     - hcp_hub
-_core:
-  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
 id: hcp_hub_page_title
 theme: hcp_hub
 region: content

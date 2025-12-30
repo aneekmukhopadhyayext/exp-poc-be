@@ -1,4 +1,3 @@
-uuid: a92d88ac-c3c2-47f0-ada0-19914d1fdc8d
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ dependencies:
     - media.type.video
   module:
     - image
-_core:
-  default_config_hash: _fnkUKwQYHkXO1Ngmq9nE6FqWUNAmkddOxAH1h5aiKg
 id: media.video.media_library
 targetEntityType: media
 bundle: video

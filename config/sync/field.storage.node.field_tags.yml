@@ -1,12 +1,9 @@
-uuid: da11de5d-27b8-484e-a79d-984d7720f5b2
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-_core:
-  default_config_hash: WpOE_bs8Bs_HY2ns7n2r__de-xno0-Bxkqep5-MsHAs
 id: node.field_tags
 field_name: field_tags
 entity_type: node

@@ -1,12 +1,9 @@
-uuid: 89f7bf52-fe71-4db5-b173-f6db79473128
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - canvas
-_core:
-  default_config_hash: JjgU17HHzN9lx-GIQMBKirKqN4_5NzKOxbkzgQXjaZg
 name: 'Drupal Canvas — Inline HTML (locked)'
 format: canvas_html_inline
 weight: 1000
