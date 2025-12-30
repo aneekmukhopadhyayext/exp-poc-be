@@ -1,0 +1,20 @@
+uuid: 0caa65a4-1077-4e02-b4e8-dd3c636154ed
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nxg_base
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: nxg_base_local_actions
+theme: nxg_base
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

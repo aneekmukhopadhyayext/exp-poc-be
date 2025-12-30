@@ -1,0 +1,20 @@
+uuid: bbb42632-7988-4f7c-926f-9d91988b10c8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hcp_hub
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: hcp_hub_local_actions
+theme: hcp_hub
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

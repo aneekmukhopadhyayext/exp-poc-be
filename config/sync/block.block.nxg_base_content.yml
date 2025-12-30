@@ -1,0 +1,22 @@
+uuid: 9fb72425-0fab-44eb-b127-1ef748031e09
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nxg_base
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: nxg_base_content
+theme: nxg_base
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 00dce3da-31fe-4fd0-ab1e-1f89ab7bdd58
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - hcp_hub
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
+id: hcp_hub_help
+theme: hcp_hub
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

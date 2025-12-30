@@ -1,0 +1,22 @@
+uuid: 4ff0ae1a-8332-46b9-a1bb-cd1341f1f853
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nxg_base
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: nxg_base_secondary_local_tasks
+theme: nxg_base
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

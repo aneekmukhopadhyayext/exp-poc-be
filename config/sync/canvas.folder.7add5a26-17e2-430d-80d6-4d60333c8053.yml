@@ -1,0 +1,11 @@
+uuid: 7add5a26-17e2-430d-80d6-4d60333c8053
+langcode: en
+status: true
+dependencies: {  }
+name: core
+configEntityTypeId: component
+weight: 0
+items:
+  - block.local_actions_block
+  - block.local_tasks_block
+  - block.page_title_block

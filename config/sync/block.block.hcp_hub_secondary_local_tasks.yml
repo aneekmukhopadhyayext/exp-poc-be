@@ -1,0 +1,22 @@
+uuid: 092b78d5-2e6a-45db-9a4a-4886e456e7bc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hcp_hub
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: hcp_hub_secondary_local_tasks
+theme: hcp_hub
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

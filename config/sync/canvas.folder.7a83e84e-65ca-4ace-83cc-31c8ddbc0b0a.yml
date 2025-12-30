@@ -1,0 +1,12 @@
+uuid: 7a83e84e-65ca-4ace-83cc-31c8ddbc0b0a
+langcode: en
+status: true
+dependencies: {  }
+name: Other
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.hcp_hub.heading
+  - sdc.hcp_hub.section
+  - sdc.hcp_hub.text
+  - sdc.olivero.teaser
