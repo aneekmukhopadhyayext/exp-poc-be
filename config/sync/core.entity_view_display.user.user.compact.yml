@@ -1,3 +1,4 @@
+uuid: ac5268fc-3a86-4ad2-b3d0-540c7eb03048
 langcode: en
 status: true
 dependencies:
@@ -17,8 +18,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: content
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }

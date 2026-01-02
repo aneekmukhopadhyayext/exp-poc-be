@@ -1,9 +1,9 @@
+uuid: 3e8db9fc-967f-49bb-a649-c1c210f25ab8
 langcode: en
 status: true
 dependencies: {  }
-name: Base
+name: Help
 configEntityTypeId: component
 weight: 0
 items:
-  - sdc.hcp_hub.button
-  - sdc.hcp_hub.icon
+  - block.help_block
