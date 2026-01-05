@@ -1,4 +1,4 @@
-uuid: d9952b14-6ceb-4477-a3c9-c16814b878cd
+uuid: 9b09a5f4-fa67-4504-8ef3-b748148bd1f6
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - canvas
 id: canvas_page--canvas_page
 disabled: false
-path: canvas_page/canvas_page
-resourceType: canvas_page--canvas_page
+path: canvas-page/canvas-page
+resourceType: canvas_page
 resourceFields:
   id:
     disabled: false

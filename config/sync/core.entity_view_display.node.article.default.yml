@@ -1,17 +1,20 @@
-uuid: 8c303ded-9338-4a1e-b357-cf4efff428b7
+uuid: d7cdbfec-afd8-4748-80a1-ef60d339d2b3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
+    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - image.style.wide
     - node.type.article
   module:
+    - comment
+    - image
     - text
     - user
-_core:
-  default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -24,14 +27,25 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_image:
-    type: entity_reference_entity_view
+  comment:
+    type: comment_default
     label: above
     settings:
       view_mode: default
-      link: false
+      pager_id: 0
     third_party_settings: {  }
-    weight: 101
+    weight: 110
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
     region: content
   field_tags:
     type: entity_reference_label

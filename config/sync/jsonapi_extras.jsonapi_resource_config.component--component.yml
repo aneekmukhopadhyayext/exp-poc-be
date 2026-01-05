@@ -1,0 +1,95 @@
+uuid: 1cfc2308-b7c6-4cbf-aab8-121fc53fd3e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - canvas
+id: component--component
+disabled: false
+path: component/component
+resourceType: component
+resourceFields:
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  dependencies:
+    disabled: false
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: false
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: false
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  label:
+    disabled: false
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  source:
+    disabled: false
+    fieldName: source
+    publicName: source
+    enhancer:
+      id: ''
+  source_local_id:
+    disabled: false
+    fieldName: source_local_id
+    publicName: source_local_id
+    enhancer:
+      id: ''
+  provider:
+    disabled: false
+    fieldName: provider
+    publicName: provider
+    enhancer:
+      id: ''
+  category:
+    disabled: false
+    fieldName: category
+    publicName: category
+    enhancer:
+      id: ''
+  active_version:
+    disabled: false
+    fieldName: active_version
+    publicName: active_version
+    enhancer:
+      id: ''
+  versioned_properties:
+    disabled: false
+    fieldName: versioned_properties
+    publicName: versioned_properties
+    enhancer:
+      id: ''

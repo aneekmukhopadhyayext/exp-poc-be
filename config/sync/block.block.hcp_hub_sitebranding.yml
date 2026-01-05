@@ -1,0 +1,23 @@
+uuid: 8383f032-1e1a-4713-8680-8cc8467ead77
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hcp_hub
+id: hcp_hub_sitebranding
+theme: hcp_hub
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

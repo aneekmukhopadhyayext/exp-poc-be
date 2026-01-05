@@ -1,0 +1,20 @@
+uuid: 0f833bf6-5be1-47b1-9964-907f761ac11e
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - hcp_hub
+id: hcp_hub_messages
+theme: hcp_hub
+region: content
+weight: 3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

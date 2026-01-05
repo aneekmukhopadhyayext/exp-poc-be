@@ -1,11 +1,9 @@
-uuid: 009a66b9-ccf6-4c70-aa1a-3a4037346f84
+uuid: 8a6e205d-d315-46ca-86ae-76aaf7f90ab4
 langcode: en
 status: true
 dependencies:
   module:
     - help
-_core:
-  default_config_hash: RZ-bcSekNSsAbIPLW7Gmyd3uUjIOSrPvnb8RCCZYJm8
 id: help_search
 label: Help
 path: help

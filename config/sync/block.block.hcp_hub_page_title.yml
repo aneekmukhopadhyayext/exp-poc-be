@@ -1,0 +1,18 @@
+uuid: 39a1af11-96cb-4c40-81ee-9b061d515093
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hcp_hub
+id: hcp_hub_page_title
+theme: hcp_hub
+region: content
+weight: 1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

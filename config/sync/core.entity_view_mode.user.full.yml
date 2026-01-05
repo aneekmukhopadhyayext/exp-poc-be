@@ -1,11 +1,9 @@
-uuid: dddddf68-7675-476e-837b-7c5f23b19650
+uuid: 90f57c45-801d-4c3f-ba09-b8ba1ae286b5
 langcode: en
 status: false
 dependencies:
   module:
     - user
-_core:
-  default_config_hash: ZbXunWS_xAvMZXFfinyvClDAb_RCVLt7gAzE3v16E-Q
 id: user.full
 label: 'User account'
 description: ''

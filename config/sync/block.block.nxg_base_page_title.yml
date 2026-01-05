@@ -1,0 +1,18 @@
+uuid: 97c9cb79-f3a4-408b-9392-5638faa8ecb1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nxg_base
+id: nxg_base_page_title
+theme: nxg_base
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

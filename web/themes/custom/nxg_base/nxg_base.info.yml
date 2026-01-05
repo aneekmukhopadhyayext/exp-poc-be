@@ -1,7 +1,7 @@
 name: NXG Base Theme
 description: "Base theme that defines building blocks."
 type: theme
-base theme: stable9
+base theme: gin
 core_version_requirement: ^11
 
 regions:

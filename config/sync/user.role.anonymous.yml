@@ -1,4 +1,4 @@
-uuid: 6ecdfd5d-2baf-42ce-9579-e0bb7f694268
+uuid: cce1237e-d546-4b67-8269-1159d5cec5a4
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,6 @@ dependencies:
     - media
     - search
     - system
-_core:
-  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
 label: 'Anonymous user'
 weight: 0

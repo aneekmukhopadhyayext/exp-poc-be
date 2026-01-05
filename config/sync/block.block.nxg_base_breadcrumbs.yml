@@ -1,0 +1,20 @@
+uuid: 2dc8fb8e-e27f-4127-af5b-4bbe19eeda55
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nxg_base
+id: nxg_base_breadcrumbs
+theme: nxg_base
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

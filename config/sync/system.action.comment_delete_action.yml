@@ -1,11 +1,9 @@
-uuid: 8c4554b4-e527-4770-9773-df6e6b97ed98
+uuid: 9eddea25-d68f-4f4b-99a6-010583640dd8
 langcode: en
 status: true
 dependencies:
   module:
     - comment
-_core:
-  default_config_hash: vpBH8OmL4sdesCdeZLsW8KOutB5gkbreWJbfjhfFKaQ
 id: comment_delete_action
 label: 'Delete comment'
 type: comment

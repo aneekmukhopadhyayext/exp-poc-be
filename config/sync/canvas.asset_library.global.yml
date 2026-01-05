@@ -1,12 +1,10 @@
-uuid: ca977805-01dc-4740-91ee-5a8c7b8c8046
+uuid: 78127e83-b272-4b6c-9580-0736b133217f
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - canvas
-_core:
-  default_config_hash: Jtg2ZbEaVmgKuS8lDEIZJko2Za7PYAAIzl1Np0vLQYw
 id: global
 label: 'Global CSS'
 css:

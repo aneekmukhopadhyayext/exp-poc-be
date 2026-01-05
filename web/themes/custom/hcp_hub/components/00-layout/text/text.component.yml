@@ -1,0 +1,25 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Text
+status: stable
+group: Base
+props:
+  type: object
+  properties:
+    text:
+      type: string
+      title: Text
+      contentMediaType: text/html
+      description: The text content to display.
+      examples:
+        - '<p>This is an example text.</p>'
+    align:
+      type: string
+      title: Text Alignment
+      description: The alignment of the text.
+      enum:
+        - left
+        - center
+        - right
+      default: left
+      examples:
+        - left

@@ -1,9 +1,7 @@
-uuid: cd1ca4ec-cf18-4dda-b89e-5a5778530617
+uuid: da6bdb69-3cfa-458a-998b-b9018c62d582
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: SAeixlV7Djy_Ggv_1P95TiqD4KUihA5icvU521tA84Y
 id: short
 label: 'Default short date'
 locked: false

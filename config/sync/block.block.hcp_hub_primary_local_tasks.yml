@@ -1,0 +1,20 @@
+uuid: dd6d12bc-3a25-4ce1-a8d2-c0693c6659ab
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hcp_hub
+id: hcp_hub_primary_local_tasks
+theme: hcp_hub
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

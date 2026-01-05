@@ -1,4 +1,4 @@
-uuid: f9bb1088-effe-43a3-bdda-bf1e56d7133d
+uuid: e791153e-7402-46a6-ad05-f0c7e5dc4bfb
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - search
   theme:
     - olivero
-_core:
-  default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
 id: olivero_search_form_wide
 theme: olivero
 region: secondary_menu

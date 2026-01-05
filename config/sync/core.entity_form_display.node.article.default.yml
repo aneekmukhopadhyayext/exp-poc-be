@@ -1,18 +1,19 @@
-uuid: 37954549-c118-46cb-9b67-16f2b5f8ce44
+uuid: 92a743e8-1e95-465a-9266-b2fe1b4491a8
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - image.style.thumbnail
     - node.type.article
   module:
-    - media_library
+    - comment
+    - image
     - path
     - text
-_core:
-  default_config_hash: ewbd6G2uX456-bgwseM2Q-KQG3RkASoyHmTh-XR3oLU
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -20,7 +21,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -28,18 +29,25 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_image:
-    type: media_library_widget
-    weight: 2
+    type: image_image
+    weight: 1
     region: content
     settings:
-      media_types: {  }
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
@@ -53,27 +61,27 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 15
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 120
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 7
+    weight: 16
     region: content
     settings:
       display_label: true
@@ -88,7 +96,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS

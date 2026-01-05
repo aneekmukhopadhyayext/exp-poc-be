@@ -1,11 +1,9 @@
-uuid: d6021b33-92ba-4b9a-b20d-00c828b3406f
+uuid: 14ad192f-634d-4162-8c1d-d7dce4b7d85a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
 id: node_make_sticky_action
 label: 'Make content sticky'
 type: node

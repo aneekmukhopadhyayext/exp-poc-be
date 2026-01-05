@@ -1,0 +1,150 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template in this directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.hero: Items for the hero (full width) region.
+ * - page.highlighted: Items for the highlighted content region.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ * - page.social: Items for the social bar region.
+ * - page.content_above: Items for the content above region.
+ * - page.content: The main content of the current page.
+ * - page.sidebar: Items for the sidebar region.
+ * - page.content_below: Items for the content below region.
+ * - page.footer_top: Items for the footer top region.
+ * - page.footer_bottom: Items for the footer bottom region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+<div class="page-wrapper">
+
+  {# Header Region #}
+  {% if page.header %}
+    <header class="header-region" role="banner">
+      {{ page.header }}
+    </header>
+  {% endif %}
+
+  {# Primary Menu Region #}
+  {% if page.primary_menu %}
+    <nav class="primary-menu-region" role="navigation" aria-label="{{ 'Primary menu'|t }}">
+      {{ page.primary_menu }}
+    </nav>
+  {% endif %}
+
+  {# Secondary Menu Region #}
+  {% if page.secondary_menu %}
+    <nav class="secondary-menu-region" role="navigation" aria-label="{{ 'Secondary menu'|t }}">
+      {{ page.secondary_menu }}
+    </nav>
+  {% endif %}
+
+  {# Hero Region (Full Width) #}
+  {% if page.hero %}
+    <section class="hero-region hero-full-width">
+      {{ page.hero }}
+    </section>
+  {% endif %}
+
+  {# Highlighted Region #}
+  {% if page.highlighted %}
+    <section class="highlighted-region">
+      {{ page.highlighted }}
+    </section>
+  {% endif %}
+
+  {# Breadcrumb Region #}
+  {% if page.breadcrumb %}
+    <nav class="breadcrumb-region" role="navigation" aria-label="{{ 'Breadcrumb'|t }}">
+      {{ page.breadcrumb }}
+    </nav>
+  {% endif %}
+
+  {# Social Bar Region #}
+  {% if page.social %}
+    <aside class="social-region">
+      {{ page.social }}
+    </aside>
+  {% endif %}
+
+  {# Main Content Area #}
+  <main class="main-content" role="main">
+
+    {# Content Above Region #}
+    {% if page.content_above %}
+      <section class="content-above-region">
+        {{ page.content_above }}
+      </section>
+    {% endif %}
+
+    {# Content and Sidebar Layout #}
+    <div class="content-layout">
+
+      {# Main Content Region #}
+      <div class="content-region">
+        {{ page.content }}
+      </div>
+
+      {# Sidebar Region #}
+      {% if page.sidebar %}
+        <aside class="sidebar-region" role="complementary">
+          {{ page.sidebar }}
+        </aside>
+      {% endif %}
+
+    </div>
+
+    {# Content Below Region #}
+    {% if page.content_below %}
+      <section class="content-below-region">
+        {{ page.content_below }}
+      </section>
+    {% endif %}
+
+  </main>
+
+  {# Footer Top Region #}
+  {% if page.footer_top %}
+    <footer class="footer-top-region">
+      {{ page.footer_top }}
+    </footer>
+  {% endif %}
+
+  {# Footer Bottom Region #}
+  {% if page.footer_bottom %}
+    <footer class="footer-bottom-region" role="contentinfo">
+      {{ page.footer_bottom }}
+    </footer>
+  {% endif %}
+
+</div>

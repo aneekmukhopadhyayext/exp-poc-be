@@ -1,4 +1,4 @@
-uuid: 20c06967-e719-495b-9a94-663c723e3200
+uuid: 57d2eb66-9dfb-4a4d-9ce2-c45fc0f548e4
 langcode: en
 status: false
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
   enforced:
     module:
       - canvas
-_core:
-  default_config_hash: 19_c5TyRhDiqf36PYtB4vYtnKYIJJpckCZZanFLL5kI
 format: canvas_html_block
 editor: ckeditor5
 settings:

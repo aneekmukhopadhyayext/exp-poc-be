@@ -1,0 +1,147 @@
+{% set card_orientation = orientation|default('vertical') %}
+{% set card_style = style|default('framed') %}
+{% set card_background = background|default('noColor') %}
+{% set is_text_centered = is_text_centered|default(false) ? 'yes' : 'no' %}
+{% set is_clickable = url is not empty and url != 'No URL' ? 'yes' : 'no' %}
+
+{# Define card variant classes #}
+{% set card_base_classes = ['group', 'relative', 'flex', 'rounded-md', 'shadow-lg', 'in-[.views-row]:h-full'] %}
+
+{% set card_orientation_classes = {
+  'vertical': 'flex-col',
+  'horizontal': 'md:flex-row'
+} %}
+
+{% set card_is_text_centered_classes = {
+  'yes': 'text-center',
+  'no': 'text-left'
+} %}
+
+{% set card_clickable_classes = {
+  'yes': 'cursor-pointer transition duration-300 hover:scale-103',
+  'no': ''
+} %}
+
+{% set card_style_classes = {
+  'framed': 'gap-4 p-4',
+  'full': ''
+} %}
+
+{% set card_background_color_classes = {
+  'default': 'bg-card text-card-foreground hover:bg-card/80',
+  'accent': 'bg-accent text-accent-foreground hover:bg-accent/80',
+  'primary': 'bg-primary text-primary-foreground hover:bg-primary/80',
+  'inverted': 'bg-foreground text-background hover:bg-foreground/80',
+  'noColor': 'shadow-none'
+} %}
+
+{# Define card media variant classes #}
+{% set card_media_base_classes = ['aspect-video', 'overflow-hidden'] %}
+
+{% set card_media_orientation_classes = {
+  'vertical': '',
+  'horizontal': 'md:aspect-auto md:flex-[0_1_50%]'
+} %}
+
+{# Define card media compound variant classes based on orientation and style #}
+{% set card_media_compound_classes = '' %}
+{% if card_orientation == 'horizontal' and card_style == 'full' %}
+  {% set card_media_compound_classes = 'rounded-l-md' %}
+{% elseif card_orientation == 'vertical' and card_style == 'full' %}
+  {% set card_media_compound_classes = 'rounded-t-md' %}
+{% endif %}
+
+{# Define card content variant classes #}
+{% set card_content_base_classes = ['flex', 'w-full', 'flex-col', 'items-baseline'] %}
+
+{% set card_content_orientation_classes = {
+  'vertical': '',
+  'horizontal': 'md:flex-[0_1_50%]'
+} %}
+
+{% set card_content_style_classes = {
+  'framed': '',
+  'full': 'rounded-b p-4'
+} %}
+
+{# Define card content compound variant classes #}
+{% set card_content_compound_classes = '' %}
+{% if card_orientation == 'horizontal' and card_style == 'full' %}
+  {% set card_content_compound_classes = 'p-4 lg:p-6' %}
+{% elseif card_orientation == 'horizontal' and card_style == 'framed' %}
+  {% set card_content_compound_classes = '' %}
+{% elseif card_orientation == 'vertical' and card_background == 'noColor' and card_style == 'full' %}
+  {% set card_content_compound_classes = 'px-0!' %}
+{% elseif card_orientation == 'horizontal' and card_background == 'noColor' and card_style == 'full' %}
+  {% set card_content_compound_classes = 'py-0!' %}
+{% endif %}
+
+{# Build final class strings #}
+{% set card_class_list = card_base_classes|merge([
+  card_orientation_classes[card_orientation] ?: '',
+  card_is_text_centered_classes[is_text_centered] ?: '',
+  card_clickable_classes[is_clickable] ?: '',
+  card_style_classes[card_style] ?: '',
+  card_background_color_classes[card_background] ?: '',
+  card_classes|default('')
+]) %}
+
+{% set card_classes_final = card_class_list|join(' ')|trim %}
+
+{% set card_media_class_list = card_media_base_classes|merge([
+  card_media_orientation_classes[card_orientation] ?: '',
+  card_media_compound_classes
+]) %}
+
+{% set card_media_classes = card_media_class_list|join(' ')|trim %}
+
+{% set card_content_class_list = card_content_base_classes|merge([
+  card_content_orientation_classes[card_orientation] ?: '',
+  card_content_style_classes[card_style] ?: '',
+  card_content_compound_classes
+]) %}
+
+{% set card_content_classes = card_content_class_list|join(' ')|trim %}
+
+<div class="{{ card_classes_final }}">
+  {% if media.src is not empty %}
+    <div class="{{ card_media_classes }}">
+      {% block media %}
+        {% include 'canvas:image' ignore missing with {
+          src: media.src,
+          alt: media.alt,
+          class: 'object-cover w-full h-full',
+          width: media.width,
+          height: media.height,
+          sizes: card_orientation == 'stacked' ? 'auto, 100vw' : '50vw'
+        } only %}
+      {% endblock %}
+    </div>
+  {% endif %}
+
+  <div class="{{ card_content_classes }}">
+    <div class="flex w-full flex-col gap-1 md:gap-2">
+      <h3 class="font-semibold">
+        {{ heading_text }}
+      </h3>
+      {% if text is not empty %}
+        <p class="mb-0 text-lg xl:text-xl">
+          {{ text }}
+        </p>
+      {% endif %}
+      {% if button_text is not empty %}
+        <div class="mt-4">
+          {% if is_clickable == 'yes' %}
+            <a href="{{ url }}" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
+              {{ button_text }}
+            </a>
+          {% else %}
+            <span class="inline-flex items-center font-medium">
+              {{ button_text }}
+            </span>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

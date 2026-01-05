@@ -1,4 +1,4 @@
-uuid: eaf2f3e1-ad72-405e-bfec-a27f57ffd76f
+uuid: bb4afca0-815a-46a7-8f73-246c80738ff8
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,6 @@ dependencies:
   enforced:
     module:
       - canvas
-_core:
-  default_config_hash: _swHftozDbyDz99i7eT_zM_4FrFpu7uifMseaG-05ok
 id: canvas_pages
 label: Pages
 module: views

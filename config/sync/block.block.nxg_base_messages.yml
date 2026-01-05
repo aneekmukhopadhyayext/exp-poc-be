@@ -1,0 +1,20 @@
+uuid: a7e379b4-db91-4313-9a54-641af6803677
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nxg_base
+id: nxg_base_messages
+theme: nxg_base
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
