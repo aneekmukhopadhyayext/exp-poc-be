@@ -1,0 +1,9 @@
+uuid: 688de73b-6ff2-44b9-9507-b4c234baedfc
+langcode: en
+status: true
+dependencies: {  }
+name: Card
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.nxg_base.card

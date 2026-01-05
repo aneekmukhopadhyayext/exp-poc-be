@@ -1,0 +1,12 @@
+uuid: c91c9929-06c8-4304-972f-40214561d9ca
+langcode: en
+status: true
+dependencies: {  }
+name: Hero
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.nxg_base.cta
+  - sdc.nxg_base.hero-billboard
+  - sdc.nxg_base.hero-blog
+  - sdc.nxg_base.hero-side-by-side

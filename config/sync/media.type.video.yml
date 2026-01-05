@@ -1,7 +1,9 @@
-uuid: 7b85bf0f-ca6f-46e8-ac02-b47b0d0e427b
+uuid: 8130edeb-6064-4024-8a10-ac8cc5e8523f
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: hzgvcRgZHltqWf8hBmttoWh95tCJoPL25lPq9YSIRsY
 id: video
 label: Video
 description: 'A locally hosted video file.'

@@ -1,0 +1,22 @@
+uuid: c2124036-efa6-477c-9eae-9a93f0832637
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hcp_hub
+_core:
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
+id: hcp_hub_breadcrumbs
+theme: hcp_hub
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

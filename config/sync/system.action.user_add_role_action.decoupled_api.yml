@@ -1,0 +1,14 @@
+uuid: 36071ee5-5fad-455e-8632-a74631a1e8d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.decoupled_api
+  module:
+    - user
+id: user_add_role_action.decoupled_api
+label: 'Add the Decoupled API role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: decoupled_api

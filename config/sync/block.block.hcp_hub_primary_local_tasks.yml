@@ -1,13 +1,15 @@
-uuid: dd6d12bc-3a25-4ce1-a8d2-c0693c6659ab
+uuid: fbc61a61-d649-45f3-bf49-530c151e9fbb
 langcode: en
 status: true
 dependencies:
   theme:
     - hcp_hub
+_core:
+  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
 id: hcp_hub_primary_local_tasks
 theme: hcp_hub
-region: content
-weight: -1
+region: header
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:

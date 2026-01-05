@@ -1,9 +1,11 @@
-uuid: b5965853-f311-4811-b4bb-7da000a79607
+uuid: e809f4f1-99a4-40c1-a3c7-2e07dc782b4b
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: 2B9uF8NL5gutNKSdPRAhhAsDWFZZG1PJOBmx0aBGd_0
 id: node_publish_action
 label: 'Publish content'
 type: node

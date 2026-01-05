@@ -1,0 +1,9 @@
+uuid: a97fd581-1975-41c9-8a27-77dac92d9c3d
+langcode: en
+status: true
+dependencies: {  }
+name: Layout
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.nxg_base.section

@@ -1,0 +1,30 @@
+uuid: 2a6744b2-a7da-44c1-86fe-1018d6726101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.products
+  module:
+    - text
+id: node.products.body
+field_name: body
+entity_type: node
+bundle: products
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+field_type: text_with_summary

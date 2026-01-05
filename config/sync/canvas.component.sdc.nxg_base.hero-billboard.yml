@@ -1,0 +1,87 @@
+uuid: 1fe793e0-7b0a-4fee-8fe3-5aa73a5bc4d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+  module:
+    - file
+    - media
+    - media_library
+    - options
+  theme:
+    - nxg_base
+active_version: 323061cace3c7c59
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        flex_position:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: center-left
+          expression: ℹ︎list_string␟value
+        height:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: full
+          expression: ℹ︎list_string␟value
+        media:
+          required: false
+          field_type: entity_reference
+          field_storage_settings:
+            target_type: media
+          field_instance_settings:
+            handler: 'default:media'
+            handler_settings:
+              target_bundles:
+                image: image
+          field_widget: media_library_widget
+          default_value: {  }
+          expression: 'ℹ︎entity_reference␟{src↝entity␜␜entity:media:image␝field_media_image␞␟src_with_alternate_widths,alt↝entity␜␜entity:media:image␝field_media_image␞␟alt,width↝entity␜␜entity:media:image␝field_media_image␞␟width,height↝entity␜␜entity:media:image␝field_media_image␞␟height}'
+        object_position:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: center
+          expression: ℹ︎list_string␟value
+        overlay_opacity:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: 0%
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        hero_slot:
+          title: 'Hero content'
+label: 'Hero billboard'
+id: sdc.nxg_base.hero-billboard
+provider: nxg_base
+source: sdc
+source_local_id: 'nxg_base:hero-billboard'
+category: Hero

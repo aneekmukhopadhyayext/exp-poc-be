@@ -1,4 +1,4 @@
-uuid: aeea8be8-0e24-4ea7-b686-273a737ce93b
+uuid: 96c3e069-acf5-4bab-a148-147fc95e0253
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - olivero
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: olivero_breadcrumbs
 theme: olivero
 region: breadcrumb

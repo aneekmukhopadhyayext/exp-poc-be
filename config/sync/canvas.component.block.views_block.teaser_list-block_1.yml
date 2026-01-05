@@ -1,0 +1,38 @@
+uuid: 5dae8abf-fe6c-4f9a-b7b9-c4407a06ea3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.teaser_list
+  module:
+    - views
+active_version: 0c13070ebb7de38b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:teaser_list-block_1'
+        label: 'Teaser List: Teaser List Block'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+  992b790997d64010:
+    settings:
+      default_settings:
+        id: 'views_block:teaser_list-block_1'
+        label: 'Teaser List'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Teaser List: Teaser List Block'
+id: block.views_block.teaser_list-block_1
+provider: views
+source: block
+source_local_id: 'views_block:teaser_list-block_1'
+category: 'Lists (Views)'

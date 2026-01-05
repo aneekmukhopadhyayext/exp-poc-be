@@ -1,4 +1,4 @@
-uuid: deb20d8f-70e5-4ea0-9c7d-fa21c5a01978
+uuid: 28c22d67-3745-49a2-ae6f-170377b23497
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.audio.field_media_audio_file
     - media.type.audio
+_core:
+  default_config_hash: 28vwMIYtvyjPcD4RyciZXIztxtZgmuWRCNgYemr_SZE
 id: media.audio.media_library
 targetEntityType: media
 bundle: audio

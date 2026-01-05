@@ -1,10 +1,12 @@
-uuid: 47deabb8-d375-463c-a98f-b93ecd4db40b
+uuid: cb9d9753-d802-43d1-9ffc-bf37e1b55140
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: EBUo7qOWqaiZaQ_RC9sLY5IoDKphS34v77VIHSACmVY
 id: node.body
 field_name: body
 entity_type: node

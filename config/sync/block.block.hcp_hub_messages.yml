@@ -1,15 +1,17 @@
-uuid: 0f833bf6-5be1-47b1-9964-907f761ac11e
+uuid: 09a0923d-a277-4505-9551-1c2038d33a7d
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
   theme:
     - hcp_hub
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
 id: hcp_hub_messages
 theme: hcp_hub
-region: content
-weight: 3
+region: highlighted
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

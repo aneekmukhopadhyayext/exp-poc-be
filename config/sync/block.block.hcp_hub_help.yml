@@ -1,4 +1,4 @@
-uuid: 6a3cee99-3ec5-4e4e-9b67-7d008a3a3af2
+uuid: fa0b3e4b-a156-4c4f-96ee-258b36050043
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,12 @@ dependencies:
     - help
   theme:
     - hcp_hub
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
 id: hcp_hub_help
 theme: hcp_hub
-region: content
-weight: -2
+region: help
+weight: 0
 provider: null
 plugin: help_block
 settings:

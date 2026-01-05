@@ -1,9 +1,11 @@
-uuid: 2323e581-9272-420b-8a5a-3554d1b0091d
+uuid: 58fd2241-7206-49a1-a4da-af8eaf8fb426
 langcode: en
 status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: VVyUA6PIaVeGtcIbgEWqJ6SYDiJdReBeojFswURFpKs
 id: media_save_action
 label: 'Save media'
 type: media

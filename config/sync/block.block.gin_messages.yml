@@ -1,4 +1,4 @@
-uuid: 15eb4891-26f8-4a47-a346-bd017e1986e1
+uuid: 370ba877-c826-4aa3-951b-bbce629be53a
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - gin
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
 id: gin_messages
 theme: gin
 region: highlighted
