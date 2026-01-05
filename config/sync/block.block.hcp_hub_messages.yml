@@ -1,0 +1,22 @@
+uuid: 09a0923d-a277-4505-9551-1c2038d33a7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hcp_hub
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: hcp_hub_messages
+theme: hcp_hub
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

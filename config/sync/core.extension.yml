@@ -68,4 +68,6 @@ theme:
   claro: 0
   gin: 0
   canvas_stark: 0
+  nxg_base: 0
+  hcp_hub: 0
 profile: standard

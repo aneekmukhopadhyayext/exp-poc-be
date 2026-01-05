@@ -1,0 +1,22 @@
+uuid: 786b3083-e2ca-4d0a-8f00-0c8e1feb5043
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hcp_hub
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: hcp_hub_content
+theme: hcp_hub
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

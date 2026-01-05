@@ -1,0 +1,105 @@
+{% set cta_text_align = text_align|default('center') %}
+{% set background_color = background_color|default('noColor') %}
+
+{# Define CTA variant classes #}
+{% set cta_base_classes = ['relative', 'z-1'] %}
+
+{% set cta_background_color_classes = {
+  'primary': 'bg-primary text-primary-foreground',
+  'secondary': 'bg-secondary text-secondary-foreground',
+  'accent': 'bg-accent text-accent-foreground',
+  'muted': 'bg-muted text-muted-foreground',
+  'inverted': 'bg-foreground text-background',
+  'noColor': 'bg-none text-foreground'
+} %}
+
+{# Define CTA content variant classes #}
+{% set cta_content_base_classes = ['relative', 'flex', 'flex-col', 'justify-center', 'min-h-80', 'gap-6', 'lg:gap-8', 'py-[90px]', 'lg:py-[115px]', 'xl:py-[140px]'] %}
+
+{% set cta_content_text_align_classes = {
+  'left': 'text-left',
+  'right': 'text-right',
+  'center': 'text-center lg:max-w-3/4 mx-auto items-center'
+} %}
+
+{% set cta_content_has_background_classes = {
+  'yes': 'text-white!',
+  'no': ''
+} %}
+
+{# Define CTA links variant classes #}
+{% set cta_links_base_classes = ['flex', 'w-full', 'flex-col', 'gap-6', 'sm:flex-row'] %}
+
+{% set cta_links_text_align_classes = {
+  'left': 'md:justify-start',
+  'right': 'md:justify-end',
+  'center': 'justify-center items-center'
+} %}
+
+{# Build CTA classes #}
+{% set cta_class_list = cta_base_classes|merge([
+  cta_background_color_classes[background_color] ?: ''
+]) %}
+
+{% set cta_classes = cta_class_list|join(' ')|trim %}
+
+{# Build CTA content classes #}
+{% set has_media_background = media.src is not empty ? 'yes' : 'no' %}
+
+{% set cta_content_class_list = cta_content_base_classes|merge([
+  cta_content_text_align_classes[cta_text_align] ?: '',
+  cta_content_has_background_classes[has_media_background] ?: ''
+]) %}
+
+{% set cta_content_classes = cta_content_class_list|join(' ')|trim %}
+
+{# Build CTA links classes #}
+{% set cta_links_class_list = cta_links_base_classes|merge([
+  cta_links_text_align_classes[cta_text_align] ?: ''
+]) %}
+
+{% set cta_links_classes = cta_links_class_list|join(' ')|trim %}
+
+<section class="{{ cta_classes }}">
+  {% block media %}
+    {% if media.src is not empty %}
+      <div class="absolute z-[-1] h-full w-full">
+        <div class="absolute inset-0 bg-black/30"></div>
+        {% include 'canvas:image' ignore missing with {
+          src: media.src,
+          alt: media.alt,
+          class: 'object-cover w-full h-full',
+          width: media.width,
+          height: media.height
+        } only %}
+      </div>
+    {% endif %}
+  {% endblock %}
+  <div class="{{ cta_content_classes }} px-4">
+    {{
+      include(
+        'nxg_base:heading',
+        {
+          heading_text: heading_text|default(''),
+          level: level|default(2),
+          align: cta_text_align,
+          text_color: 'default',
+          url: '',
+          heading_classes: 'max-w-3xl',
+          text_size: 'heading-responsive-7xl'
+        },
+        with_context: false
+      )
+    }}
+    <p class="max-w-2xl text-xl font-normal">
+      {{ text }}
+    </p>
+    {% if block('actions') is defined %}
+      <div class="{{ cta_links_classes }}">
+        {% block actions %}
+
+        {% endblock %}
+      </div>
+    {% endif %}
+  </div>
+</section>

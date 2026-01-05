@@ -1,0 +1,22 @@
+uuid: 783fdb47-9b9e-400b-bbae-7a2571e4ae50
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nxg_base
+_core:
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
+id: nxg_base_breadcrumbs
+theme: nxg_base
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

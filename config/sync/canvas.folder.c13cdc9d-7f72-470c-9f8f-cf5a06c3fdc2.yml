@@ -1,0 +1,12 @@
+uuid: c13cdc9d-7f72-470c-9f8f-cf5a06c3fdc2
+langcode: en
+status: true
+dependencies: {  }
+name: Base
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.nxg_base.button
+  - sdc.nxg_base.heading
+  - sdc.nxg_base.icon
+  - sdc.nxg_base.text

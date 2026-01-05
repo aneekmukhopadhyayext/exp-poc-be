@@ -1,0 +1,114 @@
+{% set hero_height = height|default('full') %}
+{% set hero_flex_position = flex_position|default('center-left') %}
+{% set hero_overlay_opacity = overlay_opacity|default('40%') %}
+{% set hero_object_position = object_position|default('center') %}
+
+{# Normalize classes - handle both array and string formats #}
+{% set additional_classes = classes|default('') %}
+{% if additional_classes is iterable %}
+  {% set additional_classes = additional_classes|join(' ') %}
+{% endif %}
+
+{# Define hero variant classes #}
+{% set hero_base_classes = ['hero-overlay', 'relative', 'flex', 'flex-col'] %}
+
+{% set hero_height_classes = {
+  'full': 'h-dvh',
+  'large': 'h-3/4 min-h-[500px] md:max-h-[600px] xl:max-h-[800px]',
+  'ribbon': 'h-1/2 md:min-h-[400px] md:max-h-[450px] xl:max-h-[600px]'
+} %}
+
+{% set hero_flex_position_classes = {
+  'top-left': 'justify-start',
+  'center-left': 'justify-center-safe',
+  'bottom-left': 'justify-end',
+  'hero-center': 'justify-center'
+} %}
+
+{# Define overlay variant classes #}
+{% set overlay_base_classes = ['absolute', 'inset-0'] %}
+
+{% set overlay_opacity_classes = {
+  '0%': 'bg-black/0',
+  '20%': 'bg-black/20',
+  '40%': 'bg-black/40',
+  '60%': 'bg-black/60',
+  '75%': 'bg-black/75'
+} %}
+
+{# Define image variant classes #}
+{% set image_base_classes = ['h-full', 'w-full', 'object-cover'] %}
+
+{% set image_position_classes = {
+  'top': 'object-top',
+  'center': 'object-center',
+  'bottom': 'object-bottom'
+} %}
+
+{# Define content variant classes #}
+{% set content_base_classes = ['hero-overlay--content', 'relative', 'z-1', 'flex', 'flex-col', 'gap-6', 'py-6', 'md:py-10', 'xl:py-20'] %}
+
+{% set content_flex_position_classes = {
+  'top-left': 'lg:max-w-2/3',
+  'center-left': 'lg:max-w-2/3',
+  'bottom-left': 'lg:max-w-2/3',
+  'hero-center': 'text-center items-center lg:mx-auto lg:max-w-2/3'
+} %}
+
+{# Build hero classes #}
+{% set hero_class_list = hero_base_classes|merge([
+  hero_height_classes[hero_height] ?: '',
+  hero_flex_position_classes[hero_flex_position] ?: '',
+  additional_classes
+]) %}
+
+{% set hero_classes = hero_class_list|join(' ')|trim %}
+
+{# Build overlay classes #}
+{% set overlay_class_list = overlay_base_classes|merge([
+  overlay_opacity_classes[hero_overlay_opacity] ?: ''
+]) %}
+
+{% set overlay_classes = overlay_class_list|join(' ')|trim %}
+
+{# Build image classes #}
+{% set image_class_list = image_base_classes|merge([
+  image_position_classes[hero_object_position] ?: ''
+]) %}
+
+{% set image_classes = image_class_list|join(' ')|trim %}
+
+{# Build content classes #}
+{% set content_class_list = content_base_classes|merge([
+  content_flex_position_classes[hero_flex_position] ?: ''
+]) %}
+
+{% set content_classes = content_class_list|join(' ')|trim %}
+
+<section class="{{ hero_classes }}">
+  {% if media.src is not empty %}
+    <div class="hero-overlay--media absolute z-[-1] h-full w-full">
+      {% block hero_media %}
+        {% if media.src is not empty %}
+          <div class="{{ overlay_classes }}"></div>
+        {% endif %}
+        {% include 'canvas:image' ignore missing with {
+          src: media.src,
+          alt: media.alt,
+          width: media.width,
+          height: media.height,
+          class: image_classes
+        } only %}
+      {% endblock %}
+    </div>
+  {% endif %}
+  <div class="container mx-auto px-4">
+    <div class="{{ content_classes }}">
+      {% block hero_content %}
+        {% block hero_slot %}
+
+        {% endblock %}
+      {% endblock %}
+    </div>
+  </div>
+</section>

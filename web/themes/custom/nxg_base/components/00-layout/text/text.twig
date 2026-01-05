@@ -1,0 +1,9 @@
+{% set align_class = {
+  'left': 'text-left',
+  'center': 'text-center',
+  'right': 'text-right',
+}[align] ?? 'text-left' %}
+
+<div class="text-content {{ align_class }}">
+  {{ text|raw }}
+</div>
