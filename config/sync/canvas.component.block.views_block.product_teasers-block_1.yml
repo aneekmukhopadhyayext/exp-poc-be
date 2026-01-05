@@ -1,0 +1,38 @@
+uuid: 73a0eef7-5257-46eb-9a96-c818a85a1dd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_teasers
+  module:
+    - views
+active_version: c83d06adc8f66283
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:product_teasers-block_1'
+        label: 'Product Teasers: Product teaser'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+  220e447c31c03da9:
+    settings:
+      default_settings:
+        id: 'views_block:product_teasers-block_1'
+        label: 'Product Teasers'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Product Teasers: Product teaser'
+id: block.views_block.product_teasers-block_1
+provider: views
+source: block
+source_local_id: 'views_block:product_teasers-block_1'
+category: 'Lists (Views)'

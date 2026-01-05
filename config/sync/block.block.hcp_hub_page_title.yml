@@ -1,13 +1,15 @@
-uuid: 39a1af11-96cb-4c40-81ee-9b061d515093
+uuid: 365521ff-054f-4574-b310-ac1c6c04c714
 langcode: en
 status: true
 dependencies:
   theme:
     - hcp_hub
+_core:
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
 id: hcp_hub_page_title
 theme: hcp_hub
-region: content
-weight: 1
+region: header
+weight: -30
 provider: null
 plugin: page_title_block
 settings:

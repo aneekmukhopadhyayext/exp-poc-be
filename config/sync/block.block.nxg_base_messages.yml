@@ -1,4 +1,4 @@
-uuid: a7e379b4-db91-4313-9a54-641af6803677
+uuid: ed4f0a0a-98b8-4f2f-9571-eba26eea9cea
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - nxg_base
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
 id: nxg_base_messages
 theme: nxg_base
 region: highlighted

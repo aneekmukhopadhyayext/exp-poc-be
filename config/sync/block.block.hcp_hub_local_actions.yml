@@ -1,13 +1,15 @@
-uuid: eebcadb1-674e-4b42-9bd9-13fe2ba72771
+uuid: 72bc0b77-6d17-4b66-b456-0226dccb1747
 langcode: en
 status: true
 dependencies:
   theme:
     - hcp_hub
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
 id: hcp_hub_local_actions
 theme: hcp_hub
 region: content
-weight: -3
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

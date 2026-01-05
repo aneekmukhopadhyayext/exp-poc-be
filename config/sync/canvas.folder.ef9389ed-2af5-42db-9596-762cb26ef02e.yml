@@ -1,9 +1,0 @@
-uuid: ef9389ed-2af5-42db-9596-762cb26ef02e
-langcode: en
-status: true
-dependencies: {  }
-name: Card
-configEntityTypeId: component
-weight: 0
-items:
-  - sdc.hcp_hub.card

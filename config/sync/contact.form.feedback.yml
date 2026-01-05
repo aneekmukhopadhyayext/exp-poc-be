@@ -1,7 +1,9 @@
-uuid: 70803fb7-7f0b-43c8-aabf-a9f9ae2ff77a
+uuid: 18cb98b7-faf6-4541-aa80-5986f6235641
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
 id: feedback
 label: 'Website feedback'
 recipients:

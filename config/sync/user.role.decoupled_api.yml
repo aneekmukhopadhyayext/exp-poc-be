@@ -1,0 +1,9 @@
+uuid: 1497cb3e-0e11-49d4-b518-b270ba7cce78
+langcode: en
+status: true
+dependencies: {  }
+id: decoupled_api
+label: 'Decoupled API'
+weight: 4
+is_admin: false
+permissions: {  }

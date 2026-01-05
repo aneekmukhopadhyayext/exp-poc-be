@@ -1,10 +1,12 @@
-uuid: 4d5157ab-9b89-4304-bbc6-a1c3a0cbbacb
+uuid: 043de898-a490-4b5b-b528-cec83787de7a
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
     - text
+_core:
+  default_config_hash: eS0snV_L3dx9shtWRTzm5eblwOJ7qKWC9IE-4GMTDFc
 id: block_content.body
 field_name: body
 entity_type: block_content

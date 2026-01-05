@@ -1,4 +1,4 @@
-uuid: 70c3889b-79ca-4ad4-9e50-e1ddd45c2157
+uuid: c12b36e9-0687-4ff7-83e5-754607299d4e
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
   module:
     - image
     - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -22,6 +24,12 @@ content:
   language:
     weight: 0
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content

@@ -1,10 +1,12 @@
-uuid: 662ebc7e-983a-4149-985b-ccaf0da74424
+uuid: ecfac9b3-3fa0-4c98-a0d5-36d3563daa51
 langcode: en
 status: true
 dependencies:
   enforced:
     theme:
       - olivero
+_core:
+  default_config_hash: z7ynTCss9wwEi8ojENJ08qx44RN6leI-tqoN2o5QzdE
 id: olivero_medium
 label: 'Olivero Medium'
 locked: false

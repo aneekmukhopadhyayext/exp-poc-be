@@ -1,9 +1,11 @@
-uuid: 27311af6-32d8-41a2-9846-ad7799cdf42e
+uuid: 70271366-ec97-4c3d-9f38-d9181618f654
 langcode: en
 status: true
 dependencies:
   theme:
     - nxg_base
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
 id: nxg_base_local_actions
 theme: nxg_base
 region: content

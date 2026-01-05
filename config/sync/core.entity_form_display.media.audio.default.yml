@@ -1,4 +1,4 @@
-uuid: 27ee9839-6bad-4b49-8ea2-be016c725918
+uuid: 0207f3de-306d-42b0-b5fc-61b6832e21fd
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
   module:
     - file
     - path
+_core:
+  default_config_hash: G2_SKH3jmI9FQeXSUxo3KgQqiyF1hPDEkc7-3-rCSbc
 id: media.audio.default
 targetEntityType: media
 bundle: audio
